@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 
 		$this->load->helper('url'); // loading url helper for extracting base url while using bootstrap and also for redirect function
 
-		
+		$this->load->database();
 
 		$this->load->library("session");
 		//loading of session for flash messages after form submission
