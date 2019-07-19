@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 
 		$this->load->helper('url'); // loading url helper for extracting base url while using bootstrap and also for redirect function
 
-		$this->load->database();
+		
 
 		$this->load->library("session");
 		//loading of session for flash messages after form submission
@@ -41,7 +41,7 @@ class Home extends CI_Controller {
 		$this->form_validation->set_rules("txt_message","message", "max_length[100]");
 
 			if($this->form_validation->run()==FALSE){
-				// some errors here
+				
 				$this->session->set_flashdata("error","failed to create user");
 				$this->index();
 
@@ -67,7 +67,7 @@ class Home extends CI_Controller {
 			$this->index();
 
 		}
-			
+
 		}
 	}
 
