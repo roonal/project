@@ -18,9 +18,18 @@ margin-top: 20px;
 color: white;
 }
 .text-center{
-margin-left: -100px;
+margin-left: 0px;
+font-size: 15px;
 }
 
-.icons li{
-	margin-right: 100px;
+.icons{
+	margin-left: 500px;
 }
+.icons i{
+	margin-left: 15px;
+	color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 2em;
+
+}
+

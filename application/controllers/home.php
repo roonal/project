@@ -22,18 +22,5 @@ class Home extends CI_Controller {
 
 	}
 
-	public function index1(){
-
-		$this->load->view('shared/header.php'); //loading header view
-		$this->load->view('shared/footer.php'); //loading footer view
-		$this->load->view('dashboard/carousel.php');
-		
-
-	}
-
-	public function index2(){
-		$this->load->view('shared/test.php'); //loading header view
-		$this->load->view('home_page.php');
-		$this->load->view('shared/footer.php'); //
-	}
+	
 }

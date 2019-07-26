@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		            <li class="list-inline-item">
 		              <a class="btn btn-outline-primary">
-		                <i class="fa fa-google-plus-g"></i>
+		                <i class="fa fa-linkedin"></i>
 		              </a>
 		            </li>
 		</div>
