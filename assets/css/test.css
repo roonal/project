@@ -1,0 +1,80 @@
+.navbar-new-top{
+background: #fff;
+}
+.navbar-brand{
+font-weight: 700;
+}
+.navbar-brand img{
+margin-top: -10px;
+width: 40%;
+height:300%;
+}
+.navbar-new-top ul{
+margin-right: 5%;
+
+}
+.navbar-new-top a{
+margin-left: 2%;
+}
+.navbar-btn{
+margin-right: 1%;
+}
+.navbar-new-top ul li{
+margin-right: 12%;
+}
+.navbar-new-bottom{
+background-color: #f7f7f7;
+box-shadow: 0 5px 6px -2px rgba(0,0,0,.3);
+border-top: 1px solid #e0e0e0;
+margin-top: 7%;
+height: 30px;
+}
+.navbar-new-bottom ul li{
+margin-left: 2%;
+margin-right: 2%;
+}
+.navbar-nav .nav-item a {
+color: #333;
+font-size: 16px;
+font-weight: 700;
+transition: 1s ease;
+}
+.navbar-nav .nav-item a:hover{
+color: #0062cc;
+}
+.dropdown-menu{
+font-size: 15px;
+}
+
+/**css for search button vie */
+.search{
+display:inline-flex;
+font-size:15px;
+}
+.form-control{
+font-size: 15px;
+border: 0.15em solid black;
+border-radius: 0.5em 0 0 0.5em;
+}
+.search_button{
+border:0.1em solid red;
+border-radius: 0 0.5em 0.5em 0;
+background-color: #7e7;
+color:white;
+font-weight: bold;
+margin-right: 10px;
+}
+.navbar-form{
+width:3000px;
+}
+.heart{
+margin-top: 15px;
+}
+.navbar ul li a{
+margin-left: 20px;
+margin-right: 20px;
+}
+.navbar-btn{
+width:100px;
+height: 40px;
+}
