@@ -1,0 +1,26 @@
+.page-footer{
+background-color: #45526E;
+color: white;
+text-decoration-color: white;
+height: 250px;
+position: relative;
+bottom: 0;
+right: 0;
+width: 100%;
+}
+p a{
+color: white;
+}
+.container .row{
+margin-top: 20px;
+}
+.row p a:hover{
+color: white;
+}
+.text-center{
+margin-left: -100px;
+}
+
+.icons li{
+	margin-right: 100px;
+}
