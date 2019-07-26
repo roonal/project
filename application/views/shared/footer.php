@@ -40,14 +40,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-		<div class="row d-flex align-items-center">
-			<div class="col-md-10">
+		<div class="row">
 				<p class="text-center">© 2018 Copyright:
           		<a href="#">
             	<strong>BuysellNepal.com</strong>
           		</a></p>
-          	</div>
+
+          		<div class="icons">
+					<li class="list-inline-item">
+		              <a class="btn btn-outline-primary">
+		                <i class="fa fa-facebook-f"></i>
+		              </a>
+		            </li>
+
+		            <li class="list-inline-item">
+		              <a class="btn btn-outline-primary">
+		                <i class="fa fa-twitter"></i>
+		              </a>
+		            </li>
+
+		            <li class="list-inline-item">
+		              <a class="btn btn-outline-primary">
+		               <i class="fa fa-instagram"></i>
+		              </a>
+		            </li>
+
+		            <li class="list-inline-item">
+		              <a class="btn btn-outline-primary">
+		                <i class="fa fa-google-plus-g"></i>
+		              </a>
+		            </li>
+		</div>
 
 		</div>
-	</div>	
+
+		
+
+    </div>
 </footer>
+
+<style>
+	
+</style>

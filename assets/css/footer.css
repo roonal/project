@@ -18,5 +18,9 @@ margin-top: 20px;
 color: white;
 }
 .text-center{
-margin-left: 200px;
+margin-left: -100px;
+}
+
+.icons li{
+	margin-right: 100px;
 }

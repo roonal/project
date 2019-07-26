@@ -335,8 +335,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-		
-
     </style>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -387,23 +385,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				margin-top: 10px;	
 			}
 
-			.star-rating i {
-				font-size: 14px;
-				color: #ffc000;
-			}
-
-			.wish-icon .fa-heart {
-				color: red;
-			}
-			.wish-icon {
-				position: absolute;
-				right: 10px;
-				top: 10px;
-				z-index: 99;
-				cursor: pointer;
-				font-size: 20px;
-				color: #abb0b8;
-			}
+			
 
 		</style>
 	</body>
