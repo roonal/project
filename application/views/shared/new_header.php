@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>Buy Sell</title>
 	</head>
 	<header>
-		<nav class="navbar fixed-top navbar-expand-md navbar-new-top">
+		<nav class="navbar navbar-expand-md navbar-new-top fixed-top">
 			<div class="container-fluid">
 				<a href="#" class="navbar-brand"><img src="http://localhost/ciproject/assets/images/dslr.jpg" alt=""/>Buy Sell Nepal</a>
 				<form class="navbar-form navbar-right" action="#" >
@@ -47,8 +47,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		</nav>
 		
-		<nav class="navbar fixed-top navbar-expand-md navbar-new-bottom">
-			<div class="navbar-collapse " id="navbar2">
+	
+		
+			
+		<nav class="navbar  navbar-expand-md navbar-new-bottom " data-toggle="sticky-onscroll">
+			<div class="container-fluid">
+			<div class="navbar-collapse sticky-top" id="navbar2">
 				<ul class="navbar-nav w-100 justify-content-center">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Home</a>
@@ -70,7 +74,66 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</li>
 				</ul>
 			</div>
+			</div>
 		</nav>
+	
+
+
 	
 	</div>
 </header>
+
+<style>
+	/*.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -40px;
+    z-index: 1000;
+    width: 100%;
+}*/
+
+nav{
+	position: sticky;
+	top: -40px;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+
+// Sticky navbar
+// =========================
+            // $(document).ready(function () {
+            //     // Custom function which toggles between sticky class (is-sticky)
+            //     var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
+            //         var stickyHeight = sticky.outerHeight();
+            //         var stickyTop = stickyWrapper.offset().top;
+            //         if (scrollElement.scrollTop() >= stickyTop) {
+            //             stickyWrapper.height(stickyHeight);
+            //             sticky.addClass("is-sticky");
+            //         }
+            //         else {
+            //             sticky.removeClass("is-sticky");
+            //             stickyWrapper.height('auto');
+            //         }
+            //     };
+
+            //     // Find all data-toggle="sticky-onscroll" elements
+            //     $('[data-toggle="sticky-onscroll"]').each(function () {
+            //         var sticky = $(this);
+            //         var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+            //         sticky.before(stickyWrapper);
+            //         sticky.addClass('sticky');
+
+            //         // Scroll & resize events
+            //         $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
+            //             stickyToggle(sticky, stickyWrapper, $(this));
+            //         });
+
+            //         // On page load
+            //         stickyToggle(sticky, stickyWrapper, $(window));
+            //     });
+            // });
+</script>
