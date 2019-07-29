@@ -305,10 +305,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<div class="home_image">
+			
 			<h1>Join 12,000+ Buyers and Sellers</h1>
 			<h2>To see your personal recommendations, it takes one minute to register</h2>
 			<a href="#" class="btn btn-primary">Register Here</a>
-					
+			
 		</div>
 
 		<div class="about_company">
@@ -353,16 +354,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				background-position: center;
 				background-size: cover;
 				
+				
 				}
+				
 			.home_image h1{
 				text-align: center;
 				font-weight: bold;
 				margin-top: 10px;
-				color: white;	
+				color: white;
+				
 			}
 			.home_image h2{
 				font-weight: bold;
 				color:white;
+
 			}
 			
 			.home_image a{
