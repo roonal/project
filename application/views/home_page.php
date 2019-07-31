@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><a href="#"><i class="fa fa-heart-o"></i></a></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
+							<a href="<?php echo site_url('home/product_description') ?>"><img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid"  alt="dslr_image"></a>
 							</div>
 							<div class="thumb-content">
 								<h4>DSLR</h4>

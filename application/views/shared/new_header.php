@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<header>
 		<nav class="navbar navbar-expand-md navbar-new-top fixed-top">
 			<div class="container-fluid">
-				<a href="#" class="navbar-brand"><img src="http://localhost/ciproject/assets/images/dslr.jpg" alt=""/>Buy Sell Nepal</a>
+				<a href="<?php echo site_url('home/index') ?>" class="navbar-brand"><img src="http://localhost/ciproject/assets/images/dslr.jpg" alt=""/>Buy Sell Nepal</a>
 				<form class="navbar-form navbar-right" action="#" >
 					<div class="search input-group">
 						<input type="text" class="form-control" placeholder="Search"/>
@@ -32,12 +32,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</form>
-				<button class="btn btn-danger navbar-btn">Buy Products</button>
-				<button class="btn btn-danger navbar-btn">Sell Products</button>
+				<a href="<?php echo site_url('home/buy_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
+				<a class="btn btn-danger navbar-btn" href="<?php echo site_url('home/sell_page') ?>">Sell Products</a>
 			<ul class="nav navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<button type="button"  class=" btn btn-primary navbar-btn">Register</button>
+					<button type="button"   class=" btn btn-primary navbar-btn">Register</button>
 				</li>
 				<li class="nav-itme">
 					<button type="button"  class="glyphicon glyphicon-user btn btn-primary navbar-btn">Login</button>
@@ -55,22 +55,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="navbar-collapse sticky-top" id="navbar2">
 				<ul class="navbar-nav w-100 justify-content-center">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="<?php echo site_url('home/index') ?>">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
+						<a class="nav-link" href="<?php echo site_url('home/about_us_page') ?>">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Help</a>
+						<a class="nav-link" href="<?php echo site_url('home/help_page') ?>">Help</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
+						<a class="nav-link" href="<?php echo site_url('home/contact_us_page') ?>">Contact Us</a>
 					</li>
 					<li class="nav-item heart">
-						<a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+						<a href="<?php echo site_url('home/whishlist_page') ?>"><span class="glyphicon glyphicon-heart"></span></a>
 					</li>
 					<li class="nav-item heart">
-						<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+						<a href="<?php echo site_url('home/cart_page') ?>"><span class="glyphicon glyphicon-shopping-cart"></span></a>
 					</li>
 				</ul>
 			</div>
