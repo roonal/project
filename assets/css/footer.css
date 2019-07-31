@@ -18,9 +18,28 @@ margin-top: 20px;
 color: white;
 }
 .text-center{
+/*<<<<<<< HEAD*/
 margin-left: -100px;
 }
 
 .icons li{
 	margin-right: 100px;
 }
+/*=======
+margin-left: 0px;
+font-size: 15px;
+}
+
+.icons{
+	margin-left: 500px;
+}
+.icons i{
+	margin-left: 15px;
+	color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 2em;
+
+}
+
+>>>>>>> ronal
+*/

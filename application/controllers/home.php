@@ -9,6 +9,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 
 
+
 		
 		$this->load->helper('url'); // loading url helper for the base url while using bootstrap
 		
@@ -22,18 +23,70 @@ class Home extends CI_Controller {
 
 	}
 
-	public function index1(){
 
-		$this->load->view('shared/header.php'); //loading header view
-		$this->load->view('shared/footer.php'); //loading footer view
-		$this->load->view('dashboard/carousel.php');
-		
+	public function about_us_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('about_us.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
 
 	}
 
-	public function index2(){
-		$this->load->view('shared/test.php'); //loading header view
-		$this->load->view('home_page.php');
-		$this->load->view('shared/footer.php'); //
+	public function help_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('help.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
 	}
+
+
+	public function contact_us_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('contact_us.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
+	public function whishlist_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('wishlist.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
+	public function cart_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('cart.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
+	public function buy_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('buy.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
+	public function sell_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('sell.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
+	public function product_description(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('product_desc.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
 }

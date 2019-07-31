@@ -1,0 +1,33 @@
+.navbar-brand{
+	font-size:25px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.navbar,.dropdown-menu{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.navbar-btn{
+	font-size:20px;
+
+}
+
+/**css for search button vie */
+.search{
+	display:inline-flex;
+	font-size:20px;
+}
+.form-control{
+	font-size: 30px;
+	border: 0.1em solid pink;
+	border-radius: 0.5em 0 0 0.5em;
+}
+.search_button{
+	border:0.1em solid red;
+	border-radius: 0 0.5em 0.5em 0;
+	background-color: #7e7;
+	color:white;
+	font-weight: bold;
+}
