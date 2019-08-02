@@ -89,4 +89,19 @@ class Home extends CI_Controller {
 
 	}
 
+	public function register_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('register.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+	public function login_page(){
+
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('login.php');
+		$this->load->view('shared/footer.php'); //loading footer view 
+
+	}
+
 }

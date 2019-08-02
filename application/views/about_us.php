@@ -5,11 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-	<title>Cart</title>
+	<title>About Us</title>
 </head>
 
 <link rel="stylesheet" type="text/css" href='http://localhost/ciproject/assets/css/about_us.css'></link>
 
 <body>
-	<h1>Cart page</h1>
+	<h1>About US Page</h1>
 </body>

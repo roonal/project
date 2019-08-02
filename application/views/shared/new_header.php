@@ -33,14 +33,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</form>
 				<a href="<?php echo site_url('home/buy_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
-				<a class="btn btn-danger navbar-btn" href="<?php echo site_url('home/sell_page') ?>">Sell Products</a>
+				<a href="<?php echo site_url('home/sell_page') ?>" class="btn btn-danger navbar-btn" >Sell Products</a>
 			<ul class="nav navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<button type="button"   class=" btn btn-primary navbar-btn">Register</button>
+					<a href="<?php echo site_url('home/register_page')  ?>" ><button type="button" class=" btn btn-primary navbar-btn">Register</button></a>
+					<!-- <button type="button" href="<?php echo site_url('home/register_page') ?>"class=" btn btn-primary navbar-btn">Register</button> -->
 				</li>
 				<li class="nav-itme">
-					<button type="button"  class="glyphicon glyphicon-user btn btn-primary navbar-btn">Login</button>
+					<a href="<?php echo site_url('home/login_page') ?>"><button type="button"   class=" btn btn-primary navbar-btn">Login</button></a>
 				</li>
 				
 			</ul>
