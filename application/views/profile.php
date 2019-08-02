@@ -23,7 +23,7 @@
 					<h4>User Info:</h4>
 					<p>Email: <?php echo $email; ?></p>
 					<p>Password: <?php echo $password; ?></p>
-					<a href="logout" class="btn btn-danger">Logout</a>
+					<a href="logout" class="btn btn-danger">Logout</a> <!-- redirects to logout method -->
 				</div>
 			</div>
 		</div>

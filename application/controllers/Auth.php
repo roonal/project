@@ -52,7 +52,7 @@ class Auth extends CI_Controller
 	{
 		
 		$this->session->sess_destroy();
-		redirect('Login_auth', 'refresh');
+		redirect('home', 'refresh');
 	}
 	//reset password
 	public function resetPsw()
