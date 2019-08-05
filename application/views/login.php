@@ -2,8 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
 	<link rel="stylesheet" href="assets/css/reglogin.css">
 	<head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>Login</title>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container  d-flex justify-content-center">
 			<div class="col-lg-4 m-auto">
 				<h2 class="text-center mb-3">Please Login</h2>
 				<?php    
@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<?php echo form_close(); ?>
 				<p class="text-center"><a href="<?= base_url('Auth/resetPsw'); ?>">Forgot password</a></p>
-				<p class="text-center">Do not have an account? <a href="<?= base_url('Auth'); ?>">Register</a></p>	
+				<p class="text-center">Do not have an account? <a href="<?= base_url('home/register_page'); ?>">Register</a></p>	
 			</div>
 		</div>
 		<!-- JavaScript links -->

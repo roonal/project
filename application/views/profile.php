@@ -19,7 +19,7 @@
 						$user = $this->session->userdata('user');
 						extract($user);
 					?>
-					<h2>Welcome to Homepage </h2>
+					<!-- <h2>Welcome to Homepage </h2> -->
 					<h4>User Info:</h4>
 					<p>Email: <?php echo $email; ?></p>
 					<p>Password: <?php echo $password; ?></p>
