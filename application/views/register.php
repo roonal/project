@@ -3,15 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 	<link rel="stylesheet" href="assets/css/login.css"> -->
 	<!-- <head>
+=======
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
+	<link rel="stylesheet" href="assets/css/reglogin.css">
+	<head>
+>>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
 		<meta charset="utf-8">
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 		<title>Register Now</title>
 	</head> -->
 	<body>
-		<div class="container">
+		<div class="container d-flex justify-content-center">
 			<div class="col-lg-4 m-auto">
 				<h2 class="text-center mb-3">Register Here</h2>
 				<?php    
@@ -23,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php echo form_open('Auth/registration',array("method"=>"post")); ?>
 				<div class="form-group">
 					<label for="exampleInputUser">User Name</label>
-					<input type="text" class="form-control" name="user_name" autocomplete="off" value="<?php echo set_value('user_name')?>">
+					<input type=" text" class="form-control" name="user_name" autocomplete="off" value="<?php echo set_value('user_name')?>">
 					<span class="text-danger"><?php echo form_error('user_name');?>
 					</span>
 				</div>
@@ -49,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div>
 					<button type="submit" class="btn btn-primary btn-md btn-block font-weight-bold register-button" name="register" value="">Create Account</button>
 				</div>
-				<p class="text-center">Have an account? <a href="<?= base_url('Login_auth/index'); ?>">Log In</a>
+				<p class="text-center">Have an account? <a href="<?= base_url('home/login_page'); ?>">Log In</a>
 				<p class="text-center">By creating an account you agree to the <a href="">terms</a>&<a href="">conditions</a>
 				<?php echo form_close(); ?>
 			</div>

@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>Login</title>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container  d-flex justify-content-center">
 			<div class="col-lg-6 m-auto">
 				<h2 class="text-center mb-3">Enter registered email</h2>
 				<?php    

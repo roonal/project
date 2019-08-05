@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8">
 		<title>Buy Sell</title>
 	</head>
-	<header>
+	<header class="header-nav">
 		<nav class="navbar navbar-expand-md navbar-new-top fixed-top">
 			<div class="container-fluid">
 				<a href="<?php echo site_url('home/index') ?>" class="navbar-brand"><img src="http://localhost/ciproject/assets/images/dslr.jpg" alt=""/>Buy Sell Nepal</a>
