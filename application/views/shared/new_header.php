@@ -32,8 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</form>
-				<a href="<?php echo site_url('home/buy_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
-				<a href="<?php echo site_url('home/sell_page') ?>" class="btn btn-danger navbar-btn" >Sell Products</a>
+				<a href="<?php echo site_url('buy/main_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
+				<a href="<?php echo site_url('sell/sell_page') ?>" class="btn btn-danger navbar-btn" >Sell Products</a>
 			<ul class="nav navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav">
 				<li class="nav-item">

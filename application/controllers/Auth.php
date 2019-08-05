@@ -11,8 +11,9 @@ class Auth extends CI_Controller
 	public function index()
 	
 	{
-		
+		$this->load->view('shared/new_header.php');
 		$this->load->view('register');
+		$this->load->view('shared/footer.php');
 		
 	}
 	public function registration()
@@ -45,7 +46,9 @@ class Auth extends CI_Controller
 	}
 	public function home()
 	{
+		$this->load->view('shared/new_header.php'); 
 		$this->load->view('profile');
+		$this->load->view('shared/footer.php');
 	}
 	// logout
 	public function logout()
@@ -57,7 +60,9 @@ class Auth extends CI_Controller
 	//reset password
 	public function resetPsw()
 	{
+		$this->load->view('shared/new_header.php'); 
 		$this->load->view('forgotPsw');
+		$this->load->view('shared/footer.php');
 	
 	}
 	public function searchPsw()

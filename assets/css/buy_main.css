@@ -1,0 +1,45 @@
+body{
+	margin-top: 3em;
+	
+}
+h1{
+	margin-bottom: 1em;
+	letter-spacing: 1.5px;
+	color: #03aae8;
+	text-transform: uppercase;
+	text-align: center;
+}
+.product-grid .product-content{
+	padding: 20px 10px;
+}
+
+.product-grid .product-content .title{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 0 0 7px;
+}
+
+.product-grid .price{
+	color: black;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+
+.product-image a img{
+	width:250px;
+	height: 250px;
+}
+
+.button_view{
+	margin-left: 570px;
+}
+.icon-image a img{
+	width:100px;
+	height: 100px;
+}
+.fas fa-car{
+	width:100px;
+	height: 100px;
+}

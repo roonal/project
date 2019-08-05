@@ -26,6 +26,8 @@
 							<div class="img-box">
 								<img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
+							<br/><br/>
+							<a href="#" class="btn btn-primary">Back</a>
 							
 						</div>
 				
