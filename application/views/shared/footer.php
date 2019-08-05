@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<link rel="stylesheet" type="text/css" href='http://localhost/ciproject/assets/css/footer.css'></link>
+<link rel="stylesheet" type="text/css" href='http://localhost:8081/ciproject/assets/css/footer.css'></link>
 
 <script src="https://use.fontawesome.com/c0d357e72a.js"></script>
 

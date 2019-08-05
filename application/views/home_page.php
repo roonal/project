@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<script src="https://use.fontawesome.com/c0d357e72a.js"></script>
 
-	<link rel="stylesheet" type="text/css" href='http://localhost/ciproject/assets/css/home.css'></link>
+	<link rel="stylesheet" type="text/css" href='http://localhost:8081/ciproject/assets/css/home.css'></link>
 	<body>
 		<div class="container">
 			<div class="row">
@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<span class="wish-icon"><a href="#"><i class="fa fa-heart-o"></i></a></span>
 							<div class="img-box">
 
-							<a href="<?php echo site_url('home/product_description') ?>"><img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid"  alt="dslr_image"></a>
+							<a href="<?php echo base_url('home/product_description') ?>"><img src="http://localhost:8081/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid"  alt="dslr_image"></a>
 
 							</div>
 							<div class="thumb-content">
@@ -44,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>DSLR</h4>
@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>DSLR</h4>
@@ -88,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/dslr.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>DSLR</h4>
@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>I-Phone 10X</h4>
@@ -142,7 +142,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>I-Phone 10X</h4>
@@ -164,7 +164,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>I-Phone 10X</h4>
@@ -186,7 +186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/iphone.jpg" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>I-Phone 10X</h4>
@@ -218,7 +218,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>Mac Book Pro</h4>
@@ -240,7 +240,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>Mac Book Pro</h4>
@@ -262,7 +262,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>Mac Book Pro</h4>
@@ -284,7 +284,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="thumb-wrapper">
 							<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
 							<div class="img-box">
-								<img src="http://localhost/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
+								<img src="http://localhost:8081/ciproject/assets/images/mac_book_pro.png" class="img-responsive img-fluid" alt="dslr_image">
 							</div>
 							<div class="thumb-content">
 								<h4>Mac Book Pro</h4>
