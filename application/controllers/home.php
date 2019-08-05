@@ -97,6 +97,8 @@ class Home extends CI_Controller {
 
 	}
 	public function login_page(){
+		// $data['layout'] = 'login';
+		// $this->load->view('themes/layout', $data);
 
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('login.php');
