@@ -11,7 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
 	<link rel="stylesheet" href="assets/css/reglogin.css">
 	<head>
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
 		<meta charset="utf-8">
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 		<title>Register Now</title>

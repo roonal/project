@@ -12,29 +12,20 @@ class Login_auth extends CI_Controller
 	public function index()
 	{
 		$this->load->view('shared/new_header.php'); //loading header view
-<<<<<<< HEAD
-		$this->load->view('login');
-		$this->load->view('shared/footer.php');
-		
-=======
+
 		$this->load->view('login.php');
 		$this->load->view('shared/footer.php');
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
+
 	}
 
 	//reset password
 	public function resetPsw()
 	{
-<<<<<<< HEAD
+
 		$this->load->view('shared/new_header.php'); 
 		$this->load->view('forgotPsw');
 		$this->load->view('shared/footer.php');
-=======
-		$this->load->view('shared/new_header.php'); //loading header view
-		$this->load->view('forgotPsw.php');
-		$this->load->view('shared/footer.php'); //loading footer view 
-	
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
+
 	}
 
 	

@@ -11,17 +11,13 @@ class Auth extends CI_Controller
 	public function index()
 	
 	{
-<<<<<<< HEAD
-		$this->load->view('shared/new_header.php');
-		$this->load->view('register');
-		$this->load->view('shared/footer.php');
-=======
+
 		
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('register.php');
 		$this->load->view('shared/footer.php'); //loading footer view 
 
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
+
 		
 	}
 	public function registration()
@@ -54,13 +50,10 @@ class Auth extends CI_Controller
 	}
 	public function home()
 	{
-<<<<<<< HEAD
-		$this->load->view('shared/new_header.php'); 
-		$this->load->view('profile');
-=======
+
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('profile.php');
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
+
 		$this->load->view('shared/footer.php');
 	}
 	// logout
@@ -73,13 +66,9 @@ class Auth extends CI_Controller
 	//reset password
 	public function resetPsw()
 	{
-<<<<<<< HEAD
-		$this->load->view('shared/new_header.php'); 
-		$this->load->view('forgotPsw');
-=======
+
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('forgotPsw.php');
->>>>>>> 5d541120da90806605ea2ab8805790357aa8f28e
 		$this->load->view('shared/footer.php');
 	
 	}
