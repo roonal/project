@@ -80,7 +80,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     </div>
 </footer>
-
-<style>
-	
-</style>
