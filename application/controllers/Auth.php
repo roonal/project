@@ -6,18 +6,16 @@ class Auth extends CI_Controller
 	{
 		parent::__construct();
 		// $this->load->helper("form");
+		$this->load->model('loginmodel');
 	}
 	
 	public function index()
 	
 	{
-
 		
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('register.php');
-		$this->load->view('shared/footer.php'); //loading footer view 
-
-
+		$this->load->view('shared/footer.php'); //loading footer view
 		
 	}
 	public function registration()
@@ -40,20 +38,27 @@ class Auth extends CI_Controller
 					// 'password' => $this->input->post('user_password'),
 					'password' => password_hash($this->input->post('user_password'), PASSWORD_BCRYPT)
 				);
-				//inserting data into database table
-				$this->db->insert('member_details',$data);
-				$this->session->set_flashdata('success','<p class="alert alert-success">you are successfully registerd! Please login below</p>');
+				$data = $this->security->xss_clean($data); // XSS Clean Data
+				$result = $this->loginmodel->insert_into_users($data);
+				if ($result)
+				{
+					$this->session->set_flashdata('success','<p class="alert alert-success">you are successfully registerd! Please login below</p>');
 					redirect('Login_auth', 'refresh');
-				
+				}
 			}
 		}
 	}
 	public function home()
 	{
-
 		$this->load->view('shared/new_header.php'); //loading header view
 		$this->load->view('profile.php');
+		$this->load->view('shared/footer.php');
+	}
 
+	public function changePsw()
+	{
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('newPsw.php');
 		$this->load->view('shared/footer.php');
 	}
 	// logout
@@ -66,30 +71,27 @@ class Auth extends CI_Controller
 	//reset password
 	public function resetPsw()
 	{
-
-		$this->load->view('shared/new_header.php'); //loading header view
-		$this->load->view('forgotPsw.php');
-		$this->load->view('shared/footer.php');
-	
-	}
-	public function searchPsw()
-	{
-		if(isset($_POST['submit']))
+		if(isset($_POST['search']))
 		{
-			$this->form_validation->set_rules('user_email','email','trim|required|min_length[5]|valid_email|is_unique[member_details.email]');
+			$this->form_validation->set_rules('user_email','email','trim|required|min_length[5]|valid_email');
 			if ($this->form_validation->run() == FALSE)
 			{
 
-				$this->session->set_flashdata('error','<p class="alert alert-danger"> Email not found.</p>');
+				$this->session->set_flashdata('error_email','<p class="alert alert-danger"> the email and p.</p>');
 				redirect(base_url('Auth/resetPsw'));
-
+				
 					
 			}
-		}
-		
-		else
-		{
+			$email = $this->input->post('user_email');
+			$response = $this->loginmodel->check_user_mail($email); // check if email exist
+			if($response)
+			{
+				redirect(base_url('Auth/changePsw'));
 
+			}
 		}
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('forgotPsw.php');
+		$this->load->view('shared/footer.php');	
 	}
 }

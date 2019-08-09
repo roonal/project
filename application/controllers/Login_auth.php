@@ -36,19 +36,11 @@ class Login_auth extends CI_Controller
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->index();
-
 			}
 			else
 			{
-				// $this->load->library('session');
-
-				// $email=$this->input->post('user_email');
-				// // $password=password_hash($this->input->post('user_password'), PASSWORD_BCRYPT);
-				// $password=$this->input->post('user_password');
-				// $data = $this->loginmodel->login($email, $password);
-
 				$data = array(
-					'email' => $this->input->post('user_email'),
+					'email'=> $this->input->post('user_email'),
 					'password' => $this->input->post('user_password')
 				);
 
@@ -56,16 +48,26 @@ class Login_auth extends CI_Controller
 
 				$result = $this->loginmodel->login($data);
 		 
-				if($data)
+				if($result)
 				{
-					$this->session->set_userdata('user', $data);
+						$login_data = array(
+						'user_id' => $result['User_ID'],
+						'email' => $result['email'], 
+						'password' => $result['password'],
+						'username' => $result['username'],
+						// 'pro_pic' => $result['profile_pic_url'],
+						// 'is_user_login' => TRUE
+					);
+
+					// $this->session->set_userdata($login_data);
+					$this->session->set_userdata('user', $login_data);
 					$this->session->set_flashdata('success','<p class="alert alert-success">login succesfull</p>');
 					redirect('Auth/home');
 				}
 				else
 				{
 					// header('location:'.base_url().$this->index());
-				$this->session->set_flashdata('error','<p class="alert alert-danger"> the email and password did not matched.</p>');
+				$this->session->set_flashdata('error','<p class="alert alert-danger"> the email and password did not matched tyfghvb.</p>');
 					$this->index();
 					
 				} 
