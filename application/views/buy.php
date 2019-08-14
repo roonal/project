@@ -8,7 +8,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>About Us</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href='http://localhost/ciproject/assets/css/about_us.css'></link>
 
 <body>
 	<nav class="navbar  navbar-expand-md navbar-new-category " data-toggle="sticky-onscroll">
@@ -154,7 +153,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		background-color: #f7f7f7;
 		/*box-shadow: 0 5px 6px -2px rgba(0,0,0,.3);*/
 		border-bottom: 2px solid grey;
-		margin-top: -1%;
+		margin-top: -1.25%;
 		height: 10px;
 		}
 

@@ -13,16 +13,36 @@
 	<title>Contact US</title>
 </head>
 <body>
+	
+	<?php 
+				if($this->session->flashdata('success')){
+					echo '<div class="alert alert-success flash">' . $this->session->flashdata('success') . '</div>';
+				}
+			?>
+		
 	<div class="main">
 		<div class="left">
 			<div class="title"><h1>Contact US</h1>
-			<p>Feel free to contact us for any queries, we will get back to you within 48 business hrs</p>
+			<!-- <p>Feel free to contact us for any queries, we will get back to you within 48 business hrs</p> -->
 			</div>
-			<form action="">
-				<input type="text" placeholder="Name">
-				<input type="tel" placeholder="Phone Number">
-				<input type="email" placeholder="Email">
-				<textarea placeholder="Message"></textarea>
+
+			<?php echo form_open('contact_us/form_validation');?>
+			<form enctype="multipart/form-data" method="post">
+
+				
+			
+				<input type="text" placeholder="Name" name="name" value= "<?php echo set_value("name")?>">
+				<span class="text-danger"><?php echo form_error("name"); ?></span>
+
+				<input type="number" placeholder="Phone Number" name="number" value= "<?php echo set_value("number")?>">
+				
+
+				<input type="email" placeholder="Email" name="email" value= "<?php echo set_value("email")?>">
+				<span class="text-danger"><?php echo form_error("email"); ?></span>
+
+				<textarea type="text" placeholder="Message" name="message" value= "<?php echo set_value("message")?>"></textarea>
+				
+
 				<input type="submit" value="send">
 			</form>
 		</div>
@@ -37,6 +57,7 @@
 </div>
 
 </body>
+
 
 
 </html>

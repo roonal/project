@@ -17,7 +17,7 @@ class Sell extends CI_Controller {
 	public function sell_page(){
 
 		$this->load->view('shared/new_header.php'); //loading header view
-		$this->load->view('sell.php');
+		$this->load->view('sell1.php');
 		$this->load->view('shared/footer.php'); //loading footer view 
 
 	}
@@ -31,7 +31,6 @@ class Sell extends CI_Controller {
 		$this->form_validation->set_rules("product_price","number", 'required');
 		$this->form_validation->set_rules("product_negotiable","product_negotiable", 'required');
 		$this->form_validation->set_rules("product_delivery","product_delivery", 'required');
-		//$this->form_validation->set_rules("product_delivery_charge","number", 'required');
 		$this->form_validation->set_rules("product_condition","product_condition", 'required');
 
 
@@ -65,7 +64,6 @@ class Sell extends CI_Controller {
 				 "product_price" =>$data["product_price"],
 				"product_negotiable"=>$data["product_negotiable"],
 				"product_delivery"=>$data["product_delivery"],
-				"product_delivery_charge"=>$data["product_delivery_charge"],
 				"product_condition"=>$data["product_condition"],
 
 				

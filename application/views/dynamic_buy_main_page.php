@@ -49,4 +49,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				margin-top: 20px;
 				margin-bottom: 10px;
 			}
+			
 		</style>

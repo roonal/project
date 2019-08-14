@@ -39,16 +39,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</form>
 				<!-- <a href="<?php //echo site_url('buy/dynamic_main_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a> -->
 
-				<a href="<?php echo site_url('buy_pagination/index') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
+				<a href="<?php echo site_url('buy_pagination/index') ?>"> <button type="button" class="btn btn-danger navbar-btn" >Buy Products</button></a>
 
-				<a href="<?php echo site_url('sell/sell_page') ?>" class="btn btn-danger navbar-btn" >Sell Products</a>
+				<a href="<?php echo site_url('sell/sell_page') ?>"><button type="button" class="btn btn-danger navbar-btn" >Sell Products</button></a>
 			<ul class="nav navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav">
+
+
 				<li class="nav-item">
 					<a href="<?php echo site_url('home/register_page')  ?>" ><button type="button" class=" btn btn-primary navbar-btn">Register</button></a>
-					<!-- <button type="button" href="<?php echo site_url('home/register_page') ?>"class=" btn btn-primary navbar-btn">Register</button> -->
+					<!-- <button type="button" href="<?php //echo site_url('home/register_page') ?>"class=" btn btn-primary navbar-btn">Register</button> -->
 				</li>
-				<li class="nav-itme">
+				<li class="nav-item">
 					<a href="<?php echo site_url('home/login_page') ?>"><button type="button"   class=" btn btn-primary navbar-btn">Login</button></a>
 				</li>
 				
@@ -70,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a class="nav-link" href="<?php echo site_url('home/about_us_page') ?>">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo site_url('home/contact_us_page') ?>">Contact Us</a>
+						<a class="nav-link" href="<?php echo site_url('contact_us/index') ?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -96,6 +98,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 nav{
 	position: sticky;
 	top: -40px;
+}
+button{
+	text-align: center;
 }
 
 </style>

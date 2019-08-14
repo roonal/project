@@ -48,6 +48,7 @@
 
 			<div class="row">
 				<div class="item">
+					<div class="small_items">
 					
 					<div class="col-md-4">
 						<div class="thumb-wrapper">
@@ -75,9 +76,26 @@
 
 				</div>
 			</div>
+			</div>
 
-			<div class="row">
+			<div class="row terms">
 				<a href="<?php echo site_url('home/terms_condition') ?>"> Read Terms & Condition of Buy Sell Nepal </a>
 			</div>
 	</div>
 
+<style>
+	.container{
+	margin-top: -60px;
+}
+.item{
+	margin-top: -40px;
+}
+.small_items{
+	margin-top: 50px;
+
+}
+.terms{
+	margin-bottom: 100px;
+}
+
+</style>

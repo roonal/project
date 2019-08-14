@@ -110,3 +110,12 @@ form input{
 	font-weight: bold;
 }
 
+.flash{
+	width: 1050px;
+	height: 80px;
+	margin-left: 220px;
+	
+	margin-top: 10px;
+	margin-bottom: -30px;
+}
+

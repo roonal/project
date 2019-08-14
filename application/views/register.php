@@ -9,25 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8">
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 		<title>Register Now</title>
-<<<<<<< HEAD
-	</head> 
-	<body>
-		<div class="register_content d-flex justify-content-center ">
-			<div class="col-lg-4 m-auto">
-				<h2 class="text-center mb-3">Register Here</h2>
-				<?php    
-				if($this->session->flashdata('error')){
-					// echo '<div class="alert alert-danger"> you provided th wrong login details.' . $this->session->flashdata('error_login') . '</div>';
-					echo '<div class="alert alert-danger">' . $this->session->flashdata('error') . '</div>';
-				}
-				?>
-				<?php echo form_open('Auth/registration',array("method"=>"post")); ?>
-				<div class="form-group">
-					<label for="exampleInputUser">User Name</label>
-					<input type=" text" class="form-control" name="user_name" autocomplete="off" value="<?php echo set_value('user_name')?>">
-					<span class="text-danger"><?php echo form_error('user_name');?>
-					</span>
-=======
+
 	</head>
 	<body>
 		<div class="bg">
@@ -80,35 +62,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<?php echo form_close(); ?>
 					</div>
->>>>>>> 747a7ae3e2e5562482aece7be3eaf32ee24e58cc
+
 				</div>
 			</div>
 		</div>
-<<<<<<< HEAD
-		<!-- JavaScript links -->
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-	</body>
 
-	<style>
-		.register_content{
-			background-image: url("http://localhost/ciproject/assets/images/plain.jpg");
-
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-				min-height: 300px;
-				width: 100%;
-				background-size: cover;
-				margin-top: -60px;
-		}
-	</style>
-=======
 	</div>
 	<!-- JavaScript links -->
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </body>
->>>>>>> 747a7ae3e2e5562482aece7be3eaf32ee24e58cc
+
 </html>

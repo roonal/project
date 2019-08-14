@@ -66,13 +66,7 @@ class Home extends CI_Controller {
 	
 
 
-	public function contact_us_page(){
-
-		$this->load->view('shared/new_header.php'); //loading header view
-		$this->load->view('contact_us.php');
-		$this->load->view('shared/footer.php'); //loading footer view 
-
-	}
+	
 
 
 	public function buy_page(){

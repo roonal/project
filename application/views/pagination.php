@@ -51,4 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				margin-top: 20px;
 				margin-bottom: 10px;
 			}
+			.container{
+				margin-top: -70px;
+				margin-bottom: 50px;
+			}
+			.item{
+				margin-top: -50px;
+			}
 		</style>
