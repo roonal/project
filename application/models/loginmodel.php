@@ -6,28 +6,52 @@ class loginmodel extends CI_model
 		parent::__construct();
 		$this->load->database();
 	}
-	
-	// public function login($email, $password)
-	// {
-	// 		$query = $this->db->get_where('member_details', array('email'=>$email, 'password'=>$password));
-	// 		return $query->row_array();
-	// }
+
+	// registraion
+	public function insert_into_users($data)
+	{
+		$this->db->insert('member_details',$data);
+		return true;
+	}
+
+	// login function
 	public function login($data)
 	{
 		$query = $this->db->get_where('member_details', array('email' => $data['email']));
 		if ($query->num_rows() == 0){
 			return false;
 		}
-		else{
+		else
+		{
 			//Compare the password attempt with the password we have stored.
 			$result = $query->row_array();
+			// var_dump($data['password']);
+			// var_dump($result['password']);
 		    $validPassword = password_verify($data['password'], $result['password']);
-		    if($validPassword){
+		    // var_dump($validPassword);
+		    // die();
+		    if($validPassword)
+		    {
 		        return $result = $query->row_array();
 		    }
 
 		}
 	}
+
+	//============ Check User Email ============
+    function check_user_mail($email)
+    {
+    	$result = $this->db->get_where('member_details', array('email' => $email));
+
+    	if($result->num_rows() > 0){
+    		$result = $result->row_array();
+    		return $result;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+
 
 
 

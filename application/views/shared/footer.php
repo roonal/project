@@ -80,6 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 
     </div>
+<<<<<<< HEAD
 </footer>
 
 <style>
@@ -104,3 +105,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	margin-left: 100px;
 }
 </style>
+=======
+</footer>
+>>>>>>> 747a7ae3e2e5562482aece7be3eaf32ee24e58cc

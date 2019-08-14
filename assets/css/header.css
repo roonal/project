@@ -59,11 +59,15 @@ display:inline-flex;
 font-size:15px;
 }
 .form-control{
+height:38px;
 font-size: 15px;
 border: 0.15em solid black;
 border-radius: 0.5em 0 0 0.5em;
+border: 1.4px solid black;
+background: #e6e6e6a6;
 }
 .search_button{
+height:38px;
 border:0.1em solid red;
 border-radius: 0 0.5em 0.5em 0;
 background-color: #7e7;
