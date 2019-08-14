@@ -22,17 +22,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<nav class="navbar navbar-expand-md navbar-new-top fixed-top">
 			<div class="container-fluid">
 				<a href="<?php echo site_url('home/index') ?>" class="navbar-brand"><img src="http://localhost/ciproject/assets/images/dslr.jpg" alt=""/>Buy Sell Nepal</a>
-				<form class="navbar-form navbar-right" action="#" >
+
+				<?php echo form_open('home/search_response',['class'=>'navbar-form navbar-right']);?>
+				
 					<div class="search input-group">
-						<input type="text" class="form-control" placeholder="Search"/>
+						<input type="text" name="search_field" class="form-control" placeholder="Search"/>
+						
 						<div class="input-group-btn">
 							<button class="search_button btn btn-default" type="submit">
 							<i class="glyphicon glyphicon-search"></i>
 							</button>
 						</div>
 					</div>
+					<span class="text-danger"><?php echo form_error("search_field"); ?> </span>
+					<?php form_close() ?>
 				</form>
-				<a href="<?php echo site_url('buy/main_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
+				<!-- <a href="<?php //echo site_url('buy/dynamic_main_page') ?>" class="btn btn-danger navbar-btn" >Buy Products</a> -->
+
+				<a href="<?php echo site_url('buy_pagination/index') ?>" class="btn btn-danger navbar-btn" >Buy Products</a>
+
 				<a href="<?php echo site_url('sell/sell_page') ?>" class="btn btn-danger navbar-btn" >Sell Products</a>
 			<ul class="nav navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav">
@@ -62,16 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a class="nav-link" href="<?php echo site_url('home/about_us_page') ?>">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo site_url('home/help_page') ?>">Help</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="<?php echo site_url('home/contact_us_page') ?>">Contact Us</a>
-					</li>
-					<li class="nav-item heart">
-						<a href="<?php echo site_url('home/whishlist_page') ?>"><span class="glyphicon glyphicon-heart"></span></a>
-					</li>
-					<li class="nav-item heart">
-						<a href="<?php echo site_url('home/cart_page') ?>"><span class="glyphicon glyphicon-shopping-cart"></span></a>
 					</li>
 				</ul>
 			</div>

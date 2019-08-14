@@ -14,9 +14,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8">
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 		<title>Register Now</title>
-	</head> -->
+	</head> 
 	<body>
-		<div class="container d-flex justify-content-center">
+		<div class="register_content d-flex justify-content-center ">
 			<div class="col-lg-4 m-auto">
 				<h2 class="text-center mb-3">Register Here</h2>
 				<?php    
@@ -64,4 +64,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 	</body>
+
+	<style>
+		.register_content{
+			background-image: url("http://localhost/ciproject/assets/images/plain.jpg");
+
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				min-height: 300px;
+				width: 100%;
+				background-size: cover;
+				margin-top: -60px;
+		}
+	</style>
 </html>

@@ -59,7 +59,7 @@ class Login_auth extends CI_Controller
 
 				$result = $this->loginmodel->login($data);
 		 
-				if($data)
+				if($result)
 				{
 					$this->session->set_userdata('user', $data);
 					$this->session->set_flashdata('success','<p class="alert alert-success">login succesfull</p>');

@@ -32,7 +32,7 @@ background: #fff;
 border-radius: 6px;
 text-align: center;
 position: relative;
-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 .img-box {
 margin-bottom: 0px;
@@ -47,7 +47,7 @@ margin-bottom: 5px;
 }
 .thumb-content .btn {
 color: #7ac400;
-font-size: 11px;
+font-size: 20px;
 text-transform: uppercase;
 font-weight: bold;
 background: none;
@@ -67,27 +67,9 @@ font-size: 14px;
 font-weight: bold;
 margin-left: 5px;
 }
+
 .item-price {
 font-size: 13px;
 padding: 2px 0;
 }
-.item-price strike {
-opacity: 0.7;
-margin-right: 5px;
-}
-.star-rating i {
-font-size: 14px;
-color: #ffc000;
-}
-.wish-icon .fa-heart {
-color: red;
-}
-.wish-icon {
-position: absolute;
-right: 10px;
-top: 10px;
-z-index: 99;
-cursor: pointer;
-font-size: 20px;
-color: #abb0b8;
-}
+
