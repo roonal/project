@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</span>
 							</div>
 							<div class="pt-3">
-								<button type="submit" href="<?= base_url('Login_auth/index'); ?>" class="btn btn-primary btn-md btn-block register-button text-uppercase" name="search" value="login">Search</button>
+								<button type="submit" href= "" class="btn btn-primary btn-md btn-block register-button text-uppercase" name="search" value="login">Search</button>
 							</div>
 							<?php echo form_close(); ?>
 							<label class="text-lg-center pt-3 ">

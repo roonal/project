@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="text-danger"><?php echo form_error('confirm_password');?>
 								</span>
 							</div>
-							<div class="pt-4">
+							<div class="pt-3 pb-1">
 								<button type="submit" class="btn btn-primary btn-md btn-block register-button text-uppercase" name="change" value="change password">Change</button>
 							</div>
 							
