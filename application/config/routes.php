@@ -54,3 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = 'Login_auth';
+
+$route['buy/product/(:any)']='buy/product_description'; // routes for getting id as parameter
