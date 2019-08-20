@@ -23,6 +23,8 @@ class loginmodel extends CI_model
 		}
 		else
 		{
+			// var_dump("abcde");
+			// die();
 			//Compare the password attempt with the password we have stored.
 			$result = $query->row_array();
 			// var_dump($data['password']);

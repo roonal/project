@@ -47,6 +47,8 @@ class Login_auth extends CI_Controller
 				$data = $this->security->xss_clean($data); // XSS Clean
 
 				$result = $this->loginmodel->login($data);
+				var_dump($result);
+				die;
 		 
 				if($result)
 				{
