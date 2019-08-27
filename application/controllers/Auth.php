@@ -94,4 +94,15 @@ class Auth extends CI_Controller
 		$this->load->view('forgotPsw.php');
 		$this->load->view('shared/footer.php');	
 	}
+
+	public function update_Info()
+		{
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('changeInfo.php');
+		$this->load->view('shared/footer.php');	
+	
+		}
+	
+
+
 }

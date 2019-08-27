@@ -47,9 +47,6 @@ class Login_auth extends CI_Controller
 				$data = $this->security->xss_clean($data); // XSS Clean
 
 				$result = $this->loginmodel->login($data);
-				var_dump($result);
-				die;
-		 
 				if($result)
 				{
 						$login_data = array(
@@ -57,6 +54,7 @@ class Login_auth extends CI_Controller
 						'email' => $result['email'], 
 						'password' => $result['password'],
 						'username' => $result['username'],
+						'is_user_login' => TRUE
 						// 'pro_pic' => $result['profile_pic_url'],
 						// 'is_user_login' => TRUE
 					);

@@ -40,6 +40,17 @@ class loginmodel extends CI_model
 		}
 	}
 
+	public function getUserinfo(){
+			$id = $this->session->userdata('user_id');
+			$query = $this->db->get_where('member_details', array('User_ID' => $id));
+			return $result = $query->row_array();;;;;
+			var_dump($result);
+			die();
+		}
+			
+
+
+
 	//============ Check User Email ============
     function check_user_mail($email)
     {
