@@ -61,6 +61,13 @@ class Auth extends CI_Controller
 		$this->load->view('newPsw.php');
 		$this->load->view('shared/footer.php');
 	}
+
+	public function changePsword()
+	{
+		$this->load->view('shared/new_header.php'); //loading header view
+		$this->load->view('password.php');
+		$this->load->view('shared/footer.php');
+	}
 	// logout
 	public function logout()
 	{
